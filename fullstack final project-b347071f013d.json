@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "fullstack-final-project-243206",
+  "private_key_id": "b347071f013d43b3170cac9e47364935bc8c427e",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDELiAPFar6VOtA\n0GWNe9W1T4NCFsKUmjQXVdjBQYMUzygsIg/hs/eVZMzWX7X+kvhz4Vmxv7Siqgjd\nLcGvUruolPCqdJk4xIq/CEkz5pnC5MoAZuJsQdBpCtnjZAzFcFghZUvQV9TZ6Oey\nVHSAePU5tIcCpDyoCRhfjUnaX8VRBPWLT2lc4Sf2gmpErHOtoM7WnmmOvJattTo2\nBXwNQ7Xe9Cy2a9AYTEV08wNg9RdQCEmY6/l6G1VQZ6dpCy1Vq4x6/kQjfZbFdnrB\nIQCHWeEQj533ZKwpdErYsdpNXXcKcXe9HpVN0PIYTBfIOwZzBcwEnKW1gOpcwLIo\nRySfYqfTAgMBAAECggEAFRzVrGnrjadH7iC/XRufozScbqdeZ3m083H0ss+nGL02\nmJFN3j9s/LHtbYC9aFlOzcHJ0lxMR1k/PPZoqsKfmYP15pJHzxkvyWFN530AvT28\nE5D++yGWGUfmrRceXL07btSk9RYOvSjYjpOSOiVKVtx7zyf3synParEc6ph19sL+\nlI0zdsIj2MxtWovH1kPiKv14vmwPXoRC24JxORbQbkbsYd2yxDG2A8SycgPTMlHR\noWKtFjy3fpGtaMXiuFfght0jmVe8AIEWOOKoN5l2QMLM/rYhPNBhmAKhFyHH3NWM\n2V5Sc2MLP2kt7XB475MFiHdH7+WyAKo9uDuiWDSiQQKBgQDqnFnJXJUiftz9VNQi\n5ZvpgI6sAKGOBt+yk1w9gKQFVGptRE8CJuNF8e/AgIKkx39/jUKqK6T7WXs4x7Vh\nOUkAh9s99YwDBB/YqEVaNsF+Td/JiSM0BDonTOCqwH8gYLnAZRYf5OnhXdTRTKs/\nSV8PaOjVHmjMnjvfoR0XOTV58wKBgQDWENUHs7m5WwjWIB1Wem1Xfl0ibV+Id6lz\nwNAOHD+FYZUoRyuzDRZOjGNCDWijvw0g5Vt5A7LLhrl49VnhhH+NaTjJCdpMbHlF\nJHowhePspKrm/vc+ngk7hiWSW7pCiEYCqYyMbrEtmp5IKoh3/4Myzv8LBXMBrIHC\nbm71abKyoQKBgGzRxJuvg8USTvJ6LENbeOvfo02IpWa5LX0o+LnWNz35n7u62WLI\nItbIl0oU0YQYvLyvCuLfh5DGOm9lwm2sIn5KhZjBkgW8HgFiW3iyuSEagdh68Ycp\nBsg/0l2hF9YuxznEKXT1ur27xgCmrS+Xmq4NHSHtDvMJ2f+qPVIOSQ2dAoGAXBMf\nXlG61/RFJ7zmgZTlRRXwP2emCM/XjhdoJjmWROvFOW7rZ/eAGccexoF3+b6qifS9\nVJ73n71SN6nowCy6pHuW1jorsGWT/96BxC9C6z2k2PjgJgnZ1MWNkZds1UNCQdDl\nyF2wTfpMjKPm0R6RMyB/6SCt6BFoOtY/WcXd/CECgYAF4RGG3TQ6QEK50BURRfUX\nwvK+dyRkSRQPsGSQMivyIonJTj4gOZytyq2v78I9/GMi2qi0luFoIeDFbnNWfy70\nWrGoGXPwDsc25dKzQSAnWm6+yhzRIG9T4hwZDrbpzkVxhle8dVUxhyt7NvP1dl+k\nj3TjwmlRnb52OwPD7pZtuw==\n-----END PRIVATE KEY-----\n",
+  "client_email": "fullstack-final-project@fullstack-final-project-243206.iam.gserviceaccount.com",
+  "client_id": "113445970182791638587",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/fullstack-final-project%40fullstack-final-project-243206.iam.gserviceaccount.com"
+}
