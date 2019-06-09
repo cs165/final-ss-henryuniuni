@@ -5,10 +5,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <title>CS193x Final Project</title>
     <link rel="stylesheet" href="css/style.css"/>
+    <script src="js/input.js" defer></script>
+    <script src="js/register.js" defer></script>
+    <script src="js/login.js" defer></script>
+    <script src="js/main.js" defer></script>
+    <script src="js/result.js" defer></script>
+    <script src="js/app.js" defer></script>
     <script src="js/script.js" defer></script>
     </script>
   </head>
   <body>
     <!-- TODO(you): Add the HTML necessary to complete your final project. -->
+    <header>
+      <h1>GPA Calculator</h1>
+      <section>
+        <p id="login_text">Log in</p>
+        <p> | </p>
+        <p id="register_text">Register</p>
+      </section>
+      <span class="inactive">
+      </span>
+    </header>
+    <div id="welcome" class="inactive">
+      <p>Welcome to GPA calculator.</p>
+      <p>Please log in to continue.</p>
+      <p>If you don't have an account, please click register.</p>
+    </div>
+
+    <div id="register" class="inactive">
+      <form action="/" method="POST">
+        <p id="regresult"></p>
+        Account :<input id="ra" type="text" name="rname" required="required"><br>
+        Password:<input id="rp" type="password" name="rpass" required="required"><br>
+        Confirmed Password:<input id="rpc" type="password" name="rcpass" required="required"><br>
+        <!--<button>submit</button>-->
+        <input type="submit" value="submit">
+      </form>
+    </div>
+
+    <div id="reg_result" class="inactive">
+      <span>
+        <!-- Success or fail -->
+        <!-- Go to main page -->
+        Congratulation! Your have create your account.
+        Press next to go on.
+        <div>Next</div>
+      </span>
+    </div>
+
+    <div id="login" class="inactive">
+      <form action="/login" method="POST">        
+        Account :<input id="la" type="text" name="lname" required="required"><br>
+        Password:<input id="lp" type="password" name="lpass" required="required"><br>
+        <input type="submit" value="submit">
+        <div id="loginerr" class="inactive">
+            <p>It seems your account name or password is wrong.</p>
+            <p>Please input again.</p>
+          </div>
+      </form>
+    </div>
+
+    <div id="main" class="inactive">
+      <p>
+        Formula choose:<select id="formula">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+        </select>
+        <button id="add">Add a column</button>
+        <button id="Submit">submit</button>
+      </p>
+      <div>
+        <p>credit</p>
+        <p>lesson name (optional)</p>
+        <p>score</p>
+      </div>
+    </div>
+
+    <div id="result" class="inactive">
+      
+      </div>
+
+    <footer>If you have any question or there are some bugs. Please contact: ak47m245@gmail.com</footer>
   </body>
 </html>
