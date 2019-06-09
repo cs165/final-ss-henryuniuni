@@ -1,3 +1,157 @@
 /**
  * TODO(you): Add the CSS necessary to complete your final project.
  **/
+ body {
+   background-color: #d0e6df;
+   color: #777e8c;
+   font-family: 'Open Sans', sans-serif;
+   user-select: none;
+   -webkit-user-select: none;
+   width: 100vw;
+   height: 100vh;
+   margin: 0;
+   box-sizing: border-box; 
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+  
+#welcome,  #result{
+    background-color: white;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin: auto;
+    max-width: 600px;
+    width: 95vw;
+}    
+
+#welcome p{
+    align-items: center;
+    font-size: 2em;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+#register, #login, #main span, #main div{
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin: auto;
+    max-width: 600px;
+    width: 95vw;
+    align-items: center;
+    justify-content: center;
+}    
+
+
+#main{
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin: auto;
+    max-width: 600px;
+    width: 95vw;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}    
+
+#main #add{
+    margin-top: 1em;
+}
+
+#main p{
+    margin: 0.5em;
+}
+
+#register form, #login form{
+    font-size: 2em;
+    padding: 2em;
+}
+
+#login form div{
+    font-size: 0.5em;
+}
+
+#reg_result{
+    background-color: white;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin: auto;
+    max-width: 600px;
+    width: 95vw;
+    height: 6em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    padding: 1em;
+}
+
+#reg_result div:hover{
+    color: cornflowerblue;
+}
+
+#reg_result form div:hover{
+    color: #d0e6df;
+}
+
+h1 {
+    font-size: 3em;
+    position:absolute;
+    top:0em;
+    left:1em;
+}
+
+header span{
+    display: inline;
+    position:absolute;
+    top:2em;
+    right:0.5em;
+    padding: 0.5em;
+    font-size: 2em;
+    margin: 1em;
+}
+
+header section {
+    background-color: aqua;
+    display: inline;
+    position:absolute;
+    top:2em;
+    right:0.5em;
+    padding: 0.5em;
+}
+
+header section p{
+    font-size: 2em;
+    border-color: coral;
+    display: inline;
+}
+
+header section p:hover{
+    color: white;
+}
+
+.inactive {
+    display: none !important;
+}
+
+footer{
+    display: flex;
+    height: 40px;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    justify-content: center;
+}
+
+.column, #main div{
+    width: 95vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-bottom: 0.5em;
+}
