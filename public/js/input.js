@@ -9,8 +9,10 @@ class Input{
         const container = document.createElement("div");
         container.classList.add("column");
         const firstInput = document.createElement('input');
+        firstInput.classList.add('first');
         const secondInput = document.createElement('input');
         const thirdInput = document.createElement('input');
+        thirdInput.classList.add('third');
         container.appendChild(firstInput);
         container.appendChild(secondInput);
         container.appendChild(thirdInput);

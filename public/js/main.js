@@ -2,15 +2,9 @@ class Main{
     constructor(containerElement){
         this.containerElement = containerElement;
         //this.spanElement = containerElement.querySelector("span");
-        const button = containerElement.querySelector("#add");
+        const button = document.querySelector("#add");
         button.addEventListener('click', function(){
             app.main._createInput();
-        });
-        const submit = containerElement.querySelector("#Submit");
-        submit.addEventListener('click', function(){
-            /** calculate */
-            app.main.hide();
-            app.result.show();
         });
 
     }
@@ -21,10 +15,16 @@ class Main{
 
     show(){
         this.containerElement.classList.remove("inactive");
+        document.querySelector('body').style.display = "block";
+        document.querySelector('#Submit').classList.remove('inactive');
+        document.querySelector('#add').classList.remove('inactive');
         this._createInput();
     }
 
     hide(){
+        document.querySelector('body').style.display = "flex";
+        document.querySelector('#Submit').classList.add('inactive');
+        document.querySelector('#add').classList.add('inactive');
         this.containerElement.classList.add("inactive");
     }
 }

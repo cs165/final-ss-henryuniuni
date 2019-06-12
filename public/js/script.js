@@ -3,30 +3,67 @@
 //
 const app = new App();
 
-function queryString ()
-{
-    // This function is anonymous, is executed immediately and
-    // the return value is assigned to QueryString!
-    var query_string = {};
-    var query = window.location.search.substring(1);
-    var vars = query.split("&");
-    for (var i = 0; i < vars.length; i++)
-    {
-        var pair = vars[i].split("=");
-        // If first entry with this name
-        if (typeof query_string[pair[0]] === "undefined")
-        {
-            query_string[pair[0]] = pair[1];
-            // If second entry with this name
-        } else if (typeof query_string[pair[0]] === "string")
-        {
-            var arr = [query_string[pair[0]], pair[1]];
-            query_string[pair[0]] = arr;
-            // If third or later entry with this name
-        } else
-        {
-            query_string[pair[0]].push(pair[1]);
+function calculate(arr, arr_2, flag){
+    let fgpa = 0.00;
+    let count = 0;
+    let sum = 0.00;
+    if(flag == "1"){
+        for(let i in arr){
+            if(i == 0){
+                count -= arr[i];
+            }
+            else if(100 >= arr_2[i] && arr_2[i] >= 80){
+                sum += arr[i] * 4;
+            }
+            else if(79 >= arr_2[i] && arr_2[i] >= 70){
+                sum += arr[i] * 3;
+            }
+            else if(69 >= arr_2[i] && arr_2[i] >= 60){
+                sum += arr[i] * 2;
+            }
+            else if(59 >= arr_2[i] && arr_2[i] >= 50){
+                sum += arr[i] * 1;
+            }
+            count += arr[i];
         }
     }
-    return query_string;
+    else if(flag == "2"){
+        for(let i in arr){
+            if(i == 0){
+                count -= arr[i];
+            }
+            else if(100 >= arr_2[i] && arr_2[i] >= 90){
+                sum += arr[i] * 4.3;
+            }
+            else if(89 >= arr_2[i] && arr_2[i] >= 85){
+                sum += arr[i] * 4;
+            }
+            else if(84 >= arr_2[i] && arr_2[i] >= 80){
+                sum += arr[i] * 3.7;
+            }
+            else if(79 >= arr_2[i] && arr_2[i] >= 77){
+                sum += arr[i] * 3.3;
+            }
+            else if(76 >= arr_2[i] && arr_2[i] >= 73){
+                sum += arr[i] * 3;
+            }
+            else if(72 >= arr_2[i] && arr_2[i] >= 70){
+                sum += arr[i] * 2.7;
+            }
+            else if(69 >= arr_2[i] && arr_2[i] >= 67){
+                sum += arr[i] * 2.3;
+            }
+            else if(66 >= arr_2[i] && arr_2[i] >= 63){
+                sum += arr[i] * 2;
+            }
+            else if(62 >= arr_2[i] && arr_2[i] >= 60){
+                sum += arr[i] * 1.7;
+            }
+            count += arr[i];
+        }
+    }
+    console.log(sum);
+    console.log(count);
+    fgpa = sum / count;
+    return fgpa;
 }

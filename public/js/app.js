@@ -34,8 +34,9 @@ class App{
             app.reg.show();
         });
         //this.main.show();
+        //this.result.show();
         this.wel.classList.remove("inactive");
-        console.log(queryString());
+        //console.log(queryString());
     }
 }
 

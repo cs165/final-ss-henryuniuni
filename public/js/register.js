@@ -7,7 +7,7 @@ class Register{
             const ra = document.querySelector("#ra");
             const rp = document.querySelector("#rp");
             const rcp = document.querySelector("#rpc");
-            const arr = [ra.value,rp.value,0];
+            const arr = [ra.value,rp.value, "0.00"];
             if(rp.value != rcp.value){
                 //app.regResult.classList.remove("inactive");
                 const tmp = document.querySelector("#regresult");
