@@ -66,6 +66,28 @@ async function onPostLog(req, res){
 }
 app.post('/login', jsonParser, onPostLog);
 
+async function onPatch(req, res){
+  const messageBody = req.body;
+  const account = messageBody[0];
+  const password = messageBody[1];
+  const result = await sheet.getRows();
+  const rows = result.rows;
+  let row_index;
+  for(let i in rows){
+    if(rows[i][0]==account && rows[i][1]==password){
+      row_index = i;
+      break;
+    }
+  }
+  await sheet.setRow(parseInt(row_index),messageBody).then(value=>{
+    res.json({ "response": "success"});
+    console.log("Change GPA success");
+    }, reason=>{
+      res.json({"response" : reason});
+      console.log("Change GPA failed");
+    })
+  }
+  app.patch('/', jsonParser, onPatch);
 // Please don't change this; this is needed to deploy on Heroku.
 const port = process.env.PORT || 3000;
 
