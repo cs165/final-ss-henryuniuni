@@ -16,7 +16,7 @@
    justify-content: center;
 }
   
-#welcome,  #result{
+#welcome{
     background-color: white;
     border-radius: 10px;
     box-sizing: border-box;
@@ -32,7 +32,7 @@
     padding-right: 1em;
 }
 
-#register, #login, #main span, #main div{
+#register, #login, #main span, #main div, #result{
     display: flex;
     background-color: white;
     border-radius: 10px;
@@ -44,15 +44,20 @@
     justify-content: center;
 }    
 
+#result{
+    font-size: 3em;
+}
 
 #main{
     display: flex;
     background-color: white;
     border-radius: 10px;
     box-sizing: border-box;
-    margin: auto;
-    max-width: 600px;
-    width: 95vw;
+    margin-top: 10em;
+    margin-bottom: 5em;
+    padding-bottom: 2em;
+    /*max-width: 600px;
+    width: 95vw;*/
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -140,13 +145,17 @@ header section p:hover{
 
 footer{
     display: flex;
-    height: 40px;
+    height: 6em;
     box-sizing: border-box;
-    position: absolute;
-    bottom: 0;
+    position: fixed;
+    bottom: 0vh;
     width: 100%;
     justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    text-align: center;
 }
+
 
 .column, #main div{
     width: 95vw;
@@ -154,4 +163,10 @@ footer{
     align-items: center;
     justify-content: space-evenly;
     padding-bottom: 0.5em;
+}
+
+#Submit, #add {
+    font-size: 1em;
+    height: 2em;
+    margin: 0.1em;
 }
